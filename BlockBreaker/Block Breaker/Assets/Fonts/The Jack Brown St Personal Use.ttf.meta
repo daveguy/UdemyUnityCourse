@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: ac148f641d3aa894ab4ae5f8673986b8
+timeCreated: 1488311822
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: The Jack Bronw St
+  fontNames:
+  - The Jack Bronw St
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
