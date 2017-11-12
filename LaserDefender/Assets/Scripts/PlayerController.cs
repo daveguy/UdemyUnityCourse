@@ -49,5 +49,13 @@ public class PlayerController : MonoBehaviour {
 	void Fire(){
 		GameObject beam = Instantiate (laser, transform.position + new Vector3(0f,0.5f,0f), Quaternion.identity) as GameObject;
 		beam.GetComponent<Rigidbody2D> ().velocity = new Vector2(0, shotSpeed);
+		beam.GetComponent<LaserController> ().setType (LaserType.PLAYER);
+	}
+
+	void OnTriggerEnter2D(Collider2D other){
+		LaserController laser = other.gameObject.GetComponent<LaserController> ();
+		if(laser.getType() == LaserType.ENEMY){
+			Debug.Log ("Y'all been hit!");
+		}
 	}
 }
